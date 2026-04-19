@@ -134,6 +134,41 @@
         .contact-list a:hover {
             color: rgb(159, 8, 8); /* Sichqoncha ustiga borganda rang o'zgaradi */
         }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr; /* Hamma narsa bir ustunga tushadi */
+                margin: 10px;
+            }
+            .profile-pic {
+                grid-column: 1;
+                width: 150px;
+                height: 150px;
+            }
+            .info {
+                grid-column: 1;
+            }
+            .info h1 { font-size: 1.5rem; }
+            .info-birth, .info-status {
+                grid-column: 1;
+                text-align: left;
+            }
+            .container {
+                grid-template-columns: 1fr; /* Sidebar va Content ustma-ust tushadi */
+                gap: 20px;
+            }
+            .sidebar {
+                order: 2; /* Telefonda Sidebar pastga tushadi (ixtiyoriy) */
+            }
+            .content {
+                order: 1; /* Telefonda Asosiy ma'lumot tepada turadi */
+            }
+            header {
+                height: 150px;
+            }
+            .edu-table {
+                font-size: 0.85rem; /* Jadval sig'ishi uchun harflar kichraytirildi */
+            }
+        }
 
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
